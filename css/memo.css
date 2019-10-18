@@ -7468,12 +7468,9 @@ body {
   font-family: 'Barlow Condensed';
   background-color: #ecebeb; }
 
-h2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #cfcfcf; }
-
+/*=============================================
+=                 Header top                  =
+=============================================*/
 header {
   display: flex;
   flex-direction: column;
@@ -7507,37 +7504,46 @@ header {
         color: #ecebeb !important;
         border: none; }
 
-.row {
-  flex-wrap: nowrap; }
-
+/*=============================================
+=                     Main                    =
+=============================================*/
 main {
   overflow-x: auto; }
   main .container {
     padding: 0; }
-
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  section h3 {
-    font-weight: bold;
-    font-size: 1.5rem; }
-  section .card {
-    text-align: center;
-    margin: 10px 0;
-    padding: 15px 5px;
-    min-width: 250px;
-    background-color: #cfcfcf;
-    border: 2px solid #d3d3d3;
-    box-shadow: 3px 3px 5px #a8a8a8; }
-    section .card h4 {
-      font-size: 1.4rem; }
-    section .card .card-body {
-      padding: 0; }
-      section .card .card-body p {
-        border-left: 2px double #3c4245;
-        font-size: 1.2rem; }
-      section .card .card-body button {
-        margin: 0 5px; }
+    main .container h2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #cfcfcf; }
+    main .container .row {
+      flex-wrap: nowrap; }
+      main .container .row section {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        @media (max-width: 767.98px) {
+          main .container .row section {
+            width: 100vw; } }
+        main .container .row section h3 {
+          font-weight: bold;
+          font-size: 1.5rem; }
+        main .container .row section .card {
+          text-align: center;
+          margin: 10px 0;
+          padding: 15px 5px;
+          min-width: 250px;
+          background-color: #cfcfcf;
+          border: 2px solid #d3d3d3;
+          box-shadow: 3px 3px 5px #a8a8a8; }
+          main .container .row section .card h4 {
+            font-size: 1.4rem; }
+          main .container .row section .card .card-body {
+            padding: 0; }
+            main .container .row section .card .card-body p {
+              border-left: 2px double #3c4245;
+              font-size: 1.2rem; }
+            main .container .row section .card .card-body button {
+              margin: 0 5px; }
 
 /*# sourceMappingURL=memo.css.map */
